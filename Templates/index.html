@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixar Música</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Baixar Música</h1>
+        <form action="/baixar" method="post">
+            <div id="container-artigo">
+                <input type="text" placeholder="Copie aqui a URL" name="url" id="url">
+                <button type="submit">Baixar</button>    
+            </div>
+        </form>
+        <div id="botoes">
+            <button onclick="limparCampo()">Limpar Campo</button>
+        </div>
+    </div>
+
+    <script>
+        function limparCampo() {
+            let url = document.getElementById('url');
+            url.value = '';
+        }
+    </script>
+</body>
+</html>
